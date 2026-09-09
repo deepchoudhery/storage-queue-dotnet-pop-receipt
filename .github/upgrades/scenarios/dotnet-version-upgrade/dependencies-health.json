@@ -1,0 +1,548 @@
+{
+  "packageGovernance": {
+    "totalDistinctPackages": 9,
+    "totalVersionDriftInstances": 0,
+    "targetFramework": "net10.0",
+    "packages": [
+      {
+        "name": "Microsoft.Azure.KeyVault.Core",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "3.0.5",
+        "isCompatible": false,
+        "description": "NuGet package is incompatible",
+        "versions": [
+          {
+            "version": "1.0.0",
+            "projects": [
+              "storage-queue-dotnet-popreceipt"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "3.0.5"
+        }
+      },
+      {
+        "name": "Microsoft.Data.Edm",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "5.8.5",
+        "isCompatible": false,
+        "description": "Replace with Microsoft.OData.Edm: Use OData v4 model types; adjust EDM model builders",
+        "versions": [
+          {
+            "version": "5.8.1",
+            "projects": [
+              "storage-queue-dotnet-popreceipt"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "5.8.5"
+        }
+      },
+      {
+        "name": "Microsoft.Data.OData",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "5.8.5",
+        "isCompatible": false,
+        "description": "Replace with Microsoft.OData.Core: Align code with OData v4; adjust URI/query conventions",
+        "versions": [
+          {
+            "version": "5.8.1",
+            "projects": [
+              "storage-queue-dotnet-popreceipt"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "5.8.5"
+        }
+      },
+      {
+        "name": "Microsoft.Data.Services.Client",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "5.8.5",
+        "isCompatible": false,
+        "description": "Replace with Microsoft.OData.Client: Regenerate client proxy for OData v4; adjust entity operations accordingly",
+        "versions": [
+          {
+            "version": "5.8.1",
+            "projects": [
+              "storage-queue-dotnet-popreceipt"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "5.8.5"
+        }
+      },
+      {
+        "name": "Microsoft.ProjectOxford.Face",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "1.2.1.2",
+        "isCompatible": false,
+        "description": "NuGet package is incompatible",
+        "versions": [
+          {
+            "version": "1.2.1.2",
+            "projects": [
+              "storage-queue-dotnet-popreceipt"
+            ],
+            "isRecommended": true
+          }
+        ]
+      },
+      {
+        "name": "Microsoft.WindowsAzure.ConfigurationManager",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "3.2.3",
+        "isCompatible": false,
+        "description": "NuGet package is incompatible",
+        "versions": [
+          {
+            "version": "3.2.3",
+            "projects": [
+              "storage-queue-dotnet-popreceipt"
+            ],
+            "isRecommended": true
+          }
+        ]
+      },
+      {
+        "name": "Newtonsoft.Json",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "13.0.4",
+        "isCompatible": true,
+        "description": "NuGet package upgrade is recommended",
+        "versions": [
+          {
+            "version": "9.0.1",
+            "projects": [
+              "storage-queue-dotnet-popreceipt"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "13.0.4"
+        }
+      },
+      {
+        "name": "System.Spatial",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "5.8.5",
+        "isCompatible": false,
+        "description": "Replace with Microsoft.Spatial: Use OData v4 spatial types; adjust namespaces for geography/geometric classes",
+        "versions": [
+          {
+            "version": "5.8.1",
+            "projects": [
+              "storage-queue-dotnet-popreceipt"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "5.8.5"
+        }
+      },
+      {
+        "name": "WindowsAzure.Storage",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "8.0.0",
+        "isCompatible": true,
+        "description": "",
+        "versions": [
+          {
+            "version": "8.0.0",
+            "projects": [
+              "storage-queue-dotnet-popreceipt"
+            ],
+            "isRecommended": true
+          }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "storage-queue-dotnet-popreceipt",
+      "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+      "isSdk": false,
+      "currentFrameworks": [
+        "net472"
+      ],
+      "targetFramework": "net10.0",
+      "dependencies": {
+        "packages": [
+          {
+            "name": "Microsoft.Azure.KeyVault.Core",
+            "version": "1.0.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\packages.config"
+              }
+            ],
+            "description": "NuGet package is incompatible",
+            "compatibility": "newVersionNeeded",
+            "recommendedVersion": "3.0.5",
+            "upgrade": {
+              "newVersion": "3.0.5"
+            }
+          },
+          {
+            "name": "Microsoft.Data.Edm",
+            "version": "5.8.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\packages.config"
+              }
+            ],
+            "description": "Replace with Microsoft.OData.Edm: Use OData v4 model types; adjust EDM model builders",
+            "compatibility": "newVersionNeeded",
+            "recommendedVersion": "5.8.5",
+            "upgrade": {
+              "newVersion": "5.8.5"
+            }
+          },
+          {
+            "name": "Microsoft.Data.OData",
+            "version": "5.8.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\packages.config"
+              }
+            ],
+            "description": "Replace with Microsoft.OData.Core: Align code with OData v4; adjust URI/query conventions",
+            "compatibility": "newVersionNeeded",
+            "recommendedVersion": "5.8.5",
+            "upgrade": {
+              "newVersion": "5.8.5"
+            }
+          },
+          {
+            "name": "Microsoft.Data.Services.Client",
+            "version": "5.8.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\packages.config"
+              }
+            ],
+            "description": "Replace with Microsoft.OData.Client: Regenerate client proxy for OData v4; adjust entity operations accordingly",
+            "compatibility": "newVersionNeeded",
+            "recommendedVersion": "5.8.5",
+            "upgrade": {
+              "newVersion": "5.8.5"
+            }
+          },
+          {
+            "name": "Microsoft.ProjectOxford.Face",
+            "version": "1.2.1.2",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\packages.config"
+              }
+            ],
+            "description": "NuGet package is incompatible",
+            "compatibility": "newVersionNeeded",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Microsoft.WindowsAzure.ConfigurationManager",
+            "version": "3.2.3",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\packages.config"
+              }
+            ],
+            "description": "NuGet package is incompatible",
+            "compatibility": "newVersionNeeded",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Newtonsoft.Json",
+            "version": "9.0.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\packages.config"
+              }
+            ],
+            "description": "NuGet package upgrade is recommended",
+            "compatibility": "valid",
+            "recommendedVersion": "13.0.4",
+            "upgrade": {
+              "newVersion": "13.0.4"
+            }
+          },
+          {
+            "name": "System.Spatial",
+            "version": "5.8.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\packages.config"
+              }
+            ],
+            "description": "Replace with Microsoft.Spatial: Use OData v4 spatial types; adjust namespaces for geography/geometric classes",
+            "compatibility": "newVersionNeeded",
+            "recommendedVersion": "5.8.5",
+            "upgrade": {
+              "newVersion": "5.8.5"
+            }
+          },
+          {
+            "name": "WindowsAzure.Storage",
+            "version": "8.0.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\packages.config"
+              }
+            ],
+            "description": "",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          }
+        ],
+        "assemblies": [
+          {
+            "name": "Microsoft.Azure.KeyVault.Core",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "physicalPath": "packages\\Microsoft.Azure.KeyVault.Core.1.0.0\\lib\\net40\\Microsoft.Azure.KeyVault.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Data.Edm",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "physicalPath": "packages\\Microsoft.Data.Edm.5.8.1\\lib\\net40\\Microsoft.Data.Edm.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Data.OData",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "physicalPath": "packages\\Microsoft.Data.OData.5.8.1\\lib\\net40\\Microsoft.Data.OData.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Data.Services.Client",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "physicalPath": "packages\\Microsoft.Data.Services.Client.5.8.1\\lib\\net40\\Microsoft.Data.Services.Client.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.ProjectOxford.Face",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "physicalPath": "packages\\Microsoft.ProjectOxford.Face.1.2.1.2\\lib\\portable-net45\u002Bwp80\u002Bwin8\u002Bwpa81\u002Baspnetcore50\\Microsoft.ProjectOxford.Face.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.WindowsAzure.Configuration",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "physicalPath": "packages\\Microsoft.WindowsAzure.ConfigurationManager.3.2.3\\lib\\net40\\Microsoft.WindowsAzure.Configuration.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.WindowsAzure.Storage",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "physicalPath": "packages\\WindowsAzure.Storage.8.0.0\\lib\\net45\\Microsoft.WindowsAzure.Storage.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Newtonsoft.Json",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "physicalPath": "packages\\Newtonsoft.Json.9.0.1\\lib\\net45\\Newtonsoft.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Core",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Data.Services.Client",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Spatial",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "physicalPath": "packages\\System.Spatial.5.8.1\\lib\\net40\\System.Spatial.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.Linq",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Data.DataSetExtensions",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.CSharp",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Data",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          }
+        ],
+        "projectReferences": [],
+        "frameworkReferences": []
+      }
+    }
+  ]
+}

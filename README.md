@@ -29,22 +29,39 @@ Note: This sample uses asynchronous programming model with Task Parallel Library
 
 ## Running this sample
 
-### Instructions:
+Install the .NET 10 SDK. From the repository root, restore and build only this sample with:
 
-This sample can be run using either the Azure Storage Emulator that installs as part of the Azure SDK - or by updating the App.Config file with your AccountName and Key. 
+```powershell
+dotnet build .\dotnet\storage-queue-dotnet-popreceipt\storage-queue-dotnet-popreceipt.csproj --configuration Release -warnaserror
+```
 
-#### To run the sample using the Storage Emulator (default option)
+The SDK-style project writes its Release output to:
 
-1. Start the Azure Storage Emulator (once only) by pressing the Start button or the Windows key and searching for it by typing "Azure Storage Emulator". Select it from the list of applications to start it.
-2. Create a folder named 'testfolder' locally (~ bin/Debug) and place a few photos
-3. Set breakpoints and run the project using F10. 
+```text
+dotnet\storage-queue-dotnet-popreceipt\bin\Release\net10.0\
+```
 
-#### To run the sample using the Storage Service
+Before running, update these `appSettings` in
+`dotnet\storage-queue-dotnet-popreceipt\App.config`:
 
-1. Open the app.config file and comment out the connection string for the emulator (UseDevelopmentStorage=True) and uncomment the connection string for the storage service (AccountName=[]...)
-2. Create a Storage Account through the Azure Portal and provide your [AccountName] and [AccountKey] in the App.Config file. See http://go.microsoft.com/fwlink/?LinkId=325277 for more information
-3. Create a folder named 'testfolder' locally (~ bin/Debug) and place a few photos
-4. Set breakpoints and run the project using F10. 
+- `StorageConnectionString`: a connection string for a dedicated disposable Azure Storage account, or `UseDevelopmentStorage=true;` for Azurite.
+- `FaceAPIEndpoint`: the endpoint URI for the Azure Face resource.
+- `FaceAPIKey`: the API key for that Face resource.
+
+The migrated sample reads all three values from `App.config`. In particular, the Face key is no longer read from an environment variable. Do not commit real account keys or connection strings.
+
+Create a `testfolder` under the process working directory and add the JPG files to process. If the application is launched from the Release output directory, that folder is:
+
+```text
+dotnet\storage-queue-dotnet-popreceipt\bin\Release\net10.0\testfolder
+```
+
+> [!WARNING]
+> Running this demo creates and then deletes `samplequeue`, `samplecontainer`, and `sampletable` in the configured Storage account. Cleanup also deletes pre-existing resources with those names. Use only a dedicated disposable account or emulator; never point the sample at production.
+
+Azurite emulates the Storage services only. It does not emulate the Face service, so the sample still needs a reachable Azure Face endpoint and valid Face credentials. The Face client is pinned to the preview package `Azure.AI.Vision.Face` 1.0.0-beta.2 because no stable release is currently available. Face detection, landmarks, and the age attribute depend on the capabilities and access level of the configured Face resource; a successful local build does not prove that live Face requests are available.
+
+Validation for the .NET 10 migration was build-only: the selected project restores and builds with zero warnings and errors, but this repository has no test project and no live Storage or Face integration was exercised.
 
 
 ## More information
