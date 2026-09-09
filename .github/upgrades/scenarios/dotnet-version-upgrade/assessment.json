@@ -1,0 +1,544 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-09-09T05:25:29.0739993Z",
+  "analysisEndTime": "2026-09-09T05:25:57.9860944Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 8,
+      "incidents": 16,
+      "effort": 16
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 11,
+        "Optional": 2,
+        "Potential": 3,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 10,
+        "Project": 2,
+        "Api": 1,
+        "Binding": 3
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+      "startingProject": true,
+      "issues": 8,
+      "storyPoints": 16,
+      "properties": {
+        "appName": "storage-queue-dotnet-popreceipt",
+        "projectKind": "ClassicDotNetApp",
+        "frameworks": [
+          "net472"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": false,
+        "isTestProject": false,
+        "numberOfFiles": 2,
+        "numberOfCodeFiles": 2,
+        "linesTotal": 383,
+        "linesOfCode": 383,
+        "totalApiScanned": 293,
+        "minLinesOfCodeToChange": 1,
+        "maxLinesOfCodeToChange": 1
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "b718071e-74d7-490b-a323-a60c8979954d",
+          "ruleId": "NuGet.0001",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.KeyVault.Core, 1.0.0\n\nRecommendation:\n\nMicrosoft.Azure.KeyVault.Core, 3.0.5",
+              "protected": "Microsoft.Azure.KeyVault.Core, 1.0.0\n\nRecommendation:\n\nMicrosoft.Azure.KeyVault.Core, 3.0.5"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Microsoft.Azure.KeyVault.Core, 1.0.0\n\nRecommendation:\n\nMicrosoft.Azure.KeyVault.Core, 3.0.5",
+            "protectedSnippet": "Microsoft.Azure.KeyVault.Core, 1.0.0\n\nRecommendation:\n\nMicrosoft.Azure.KeyVault.Core, 3.0.5",
+            "label": "Microsoft.Azure.KeyVault.Core 1.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Azure.KeyVault.Core",
+              "PackageVersion": "1.0.0",
+              "PackageNewVersion": "3.0.5",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "9f313b7c-4772-493d-950c-693fdba12638",
+          "ruleId": "NuGet.0001",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Data.Edm, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Edm, 5.8.5",
+              "protected": "Microsoft.Data.Edm, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Edm, 5.8.5"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Microsoft.Data.Edm, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Edm, 5.8.5",
+            "protectedSnippet": "Microsoft.Data.Edm, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Edm, 5.8.5",
+            "label": "Microsoft.Data.Edm 5.8.1",
+            "properties": {
+              "PackageId": "Microsoft.Data.Edm",
+              "PackageVersion": "5.8.1",
+              "PackageNewVersion": "5.8.5",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c5da5f34-8813-4713-9ab1-a6de96dea618",
+          "ruleId": "NuGet.0001",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Data.OData, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.OData, 5.8.5",
+              "protected": "Microsoft.Data.OData, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.OData, 5.8.5"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Microsoft.Data.OData, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.OData, 5.8.5",
+            "protectedSnippet": "Microsoft.Data.OData, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.OData, 5.8.5",
+            "label": "Microsoft.Data.OData 5.8.1",
+            "properties": {
+              "PackageId": "Microsoft.Data.OData",
+              "PackageVersion": "5.8.1",
+              "PackageNewVersion": "5.8.5",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "813762f8-79a9-4e43-b137-5617b8950bf9",
+          "ruleId": "NuGet.0001",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Data.Services.Client, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Services.Client, 5.8.5",
+              "protected": "Microsoft.Data.Services.Client, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Services.Client, 5.8.5"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Microsoft.Data.Services.Client, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Services.Client, 5.8.5",
+            "protectedSnippet": "Microsoft.Data.Services.Client, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Services.Client, 5.8.5",
+            "label": "Microsoft.Data.Services.Client 5.8.1",
+            "properties": {
+              "PackageId": "Microsoft.Data.Services.Client",
+              "PackageVersion": "5.8.1",
+              "PackageNewVersion": "5.8.5",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "3c91e912-a11d-44ba-8159-7db660249d1f",
+          "ruleId": "NuGet.0001",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.ProjectOxford.Face, 1.2.1.2\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.ProjectOxford.Face, 1.2.1.2\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Microsoft.ProjectOxford.Face, 1.2.1.2\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.ProjectOxford.Face, 1.2.1.2\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.ProjectOxford.Face 1.2.1.2",
+            "properties": {
+              "PackageId": "Microsoft.ProjectOxford.Face",
+              "PackageVersion": "1.2.1.2",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "2d111b9b-06ba-474f-a5ee-dba0ac651295",
+          "ruleId": "NuGet.0001",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.WindowsAzure.ConfigurationManager 3.2.3",
+            "properties": {
+              "PackageId": "Microsoft.WindowsAzure.ConfigurationManager",
+              "PackageVersion": "3.2.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "bf6a64b5-a665-4968-abde-4d7d466d07cf",
+          "ruleId": "NuGet.0002",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 9.0.1\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+              "protected": "Newtonsoft.Json, 9.0.1\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Newtonsoft.Json, 9.0.1\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 9.0.1\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "label": "Newtonsoft.Json 9.0.1",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "9.0.1",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "4cf19ecc-62bc-4264-9124-140bb1e034c3",
+          "ruleId": "NuGet.0001",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Spatial, 5.8.1\n\nRecommendation:\n\nSystem.Spatial, 5.8.5",
+              "protected": "System.Spatial, 5.8.1\n\nRecommendation:\n\nSystem.Spatial, 5.8.5"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "System.Spatial, 5.8.1\n\nRecommendation:\n\nSystem.Spatial, 5.8.5",
+            "protectedSnippet": "System.Spatial, 5.8.1\n\nRecommendation:\n\nSystem.Spatial, 5.8.5",
+            "label": "System.Spatial 5.8.1",
+            "properties": {
+              "PackageId": "System.Spatial",
+              "PackageVersion": "5.8.1",
+              "PackageNewVersion": "5.8.5",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "65f86afb-3991-4700-8dff-df777ed29e1e",
+          "ruleId": "NuGet.0004",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Data.OData, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.OData, 5.8.5",
+              "protected": "Microsoft.Data.OData, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.OData, 5.8.5"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Microsoft.Data.OData, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.OData, 5.8.5",
+            "protectedSnippet": "Microsoft.Data.OData, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.OData, 5.8.5",
+            "label": "Microsoft.Data.OData 5.8.1",
+            "properties": {
+              "PackageId": "Microsoft.Data.OData",
+              "PackageVersion": "5.8.1",
+              "PackageNewVersion": "5.8.5",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "6c469817-968e-49e1-a148-f65a15efa9d6",
+          "ruleId": "NuGet.0004",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 9.0.1\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+              "protected": "Newtonsoft.Json, 9.0.1\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Newtonsoft.Json, 9.0.1\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 9.0.1\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+            "label": "Newtonsoft.Json 9.0.1",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "9.0.1",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "ed41e880-c65b-4f11-976f-76176b5af231",
+          "ruleId": "Project.0001",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj"
+          }
+        },
+        {
+          "incidentId": "377e99ba-cd39-4ed9-90b2-0148dab631bd",
+          "ruleId": "Project.0002",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0",
+              "protected": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+            "snippet": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": ".NETFramework,Version=v4.7.2",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "212f65e1-7f62-4715-94da-db923e5ab19f",
+          "ruleId": "Api.0002",
+          "description": "Breaking change: New TimeSpan.From*() overloads that take integers ",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "queue.AddMessage(message, null, TimeSpan.FromSeconds(900));",
+              "protected": "M:System.TimeSpan.FromSeconds(System.Double)"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\Program.cs",
+            "snippet": "queue.AddMessage(message, null, TimeSpan.FromSeconds(900));",
+            "protectedSnippet": "M:System.TimeSpan.FromSeconds(System.Double)",
+            "label": "M:System.TimeSpan.FromSeconds(System.Double)",
+            "properties": {
+              "CharCount": "17170"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/core-libraries/9.0/timespan-from-overloads.md",
+                "isCustom": false
+              }
+            ],
+            "line": 140,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "91d918f9-0fca-499c-b2f3-89b85071d3d7",
+          "ruleId": "Binding.0006",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Manual redirect for Newtonsoft.Json targets 9.0.0.0 but auto-generation would target 9.0.1 (MSB3836 conflict)",
+              "protected": "Manual redirect for Newtonsoft.Json targets 9.0.0.0 but auto-generation would target 9.0.1 (MSB3836 conflict)"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\App.config",
+            "snippet": "Manual redirect for Newtonsoft.Json targets 9.0.0.0 but auto-generation would target 9.0.1 (MSB3836 conflict)",
+            "protectedSnippet": "Manual redirect for Newtonsoft.Json targets 9.0.0.0 but auto-generation would target 9.0.1 (MSB3836 conflict)",
+            "properties": {
+              "AssemblyName": "Newtonsoft.Json",
+              "AssemblyCurrentVersion": "9.0.0.0",
+              "AssemblyNewVersion": "9.0.1"
+            }
+          }
+        },
+        {
+          "incidentId": "540604e1-843f-4252-b35a-533bc35a2a08",
+          "ruleId": "Binding.0006",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Manual redirect for Microsoft.Azure.KeyVault.Core targets 2.0.0.0 but auto-generation would target 1.0.0 (MSB3836 conflict)",
+              "protected": "Manual redirect for Microsoft.Azure.KeyVault.Core targets 2.0.0.0 but auto-generation would target 1.0.0 (MSB3836 conflict)"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\App.config",
+            "snippet": "Manual redirect for Microsoft.Azure.KeyVault.Core targets 2.0.0.0 but auto-generation would target 1.0.0 (MSB3836 conflict)",
+            "protectedSnippet": "Manual redirect for Microsoft.Azure.KeyVault.Core targets 2.0.0.0 but auto-generation would target 1.0.0 (MSB3836 conflict)",
+            "properties": {
+              "AssemblyName": "Microsoft.Azure.KeyVault.Core",
+              "AssemblyCurrentVersion": "2.0.0.0",
+              "AssemblyNewVersion": "1.0.0"
+            }
+          }
+        },
+        {
+          "incidentId": "e83926cd-4c1d-424b-8c22-4b5414d139a7",
+          "ruleId": "Binding.0007",
+          "projectPath": "storage-queue-dotnet-popreceipt\\storage-queue-dotnet-popreceipt.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Binding redirect for Newtonsoft.Json targets 9.0.0.0 but package provides 9.0.1",
+              "protected": "Binding redirect for Newtonsoft.Json targets 9.0.0.0 but package provides 9.0.1"
+            },
+            "kind": "File",
+            "path": "storage-queue-dotnet-popreceipt\\App.config",
+            "snippet": "Binding redirect for Newtonsoft.Json targets 9.0.0.0 but package provides 9.0.1",
+            "protectedSnippet": "Binding redirect for Newtonsoft.Json targets 9.0.0.0 but package provides 9.0.1",
+            "properties": {
+              "AssemblyName": "Newtonsoft.Json",
+              "AssemblyCurrentVersion": "9.0.0.0",
+              "AssemblyNewVersion": "9.0.1"
+            }
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "isFeature": false,
+      "description": "NuGet package is incompatible with selected target framework.\n\nPackage needs to be upgraded to a version supporting selected project target framework. If there no new package versions supporting new target framework, different package needs to be used and all code needs to be upgraded to new API.",
+      "label": "NuGet package is incompatible",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0004": {
+      "id": "NuGet.0004",
+      "isFeature": false,
+      "description": "NuGet package contains security vulnerabilities.\n\nPackage needs to be upgraded to a newer version that addresses known security vulnerabilities.",
+      "label": "NuGet package contains security vulnerability",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "Project.0001": {
+      "id": "Project.0001",
+      "isFeature": false,
+      "description": "Project file needs to be converted to SDK-style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK-style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Binding.0006": {
+      "id": "Binding.0006",
+      "isFeature": false,
+      "description": "An explicit binding redirect targets a different version than what auto-generation would produce. MSBuild will throw MSB3836 conflict error because it cannot determine which redirect wins.",
+      "label": "Manual redirect conflicts with auto-generated version",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Assembly binding redirection",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262689",
+          "isCustom": false
+        }
+      ]
+    },
+    "Binding.0007": {
+      "id": "Binding.0007",
+      "isFeature": false,
+      "description": "A binding redirect\u0027s newVersion is lower than the version provided by the NuGet package. This forced downgrade usually causes a load failure at runtime because the expected assembly version is not available.",
+      "label": "Binding redirect forces version downgrade",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Assembly binding redirection",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262689",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
